@@ -11,6 +11,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(44, 43, 43);
+
         }
         td, th{
             border: 1px solid black;
@@ -25,6 +33,9 @@
         thead, tfoot{
             background-color: rgb(44, 43, 43);
             color: white;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
         td.num{
             vertical-align: middle;
@@ -55,6 +66,10 @@
              <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
+             </tr>
+             <tr>
+                <td>Campo Belo</td>
+                <td class="num">13 022 223</td>
              </tr>
         </tbody>
 
