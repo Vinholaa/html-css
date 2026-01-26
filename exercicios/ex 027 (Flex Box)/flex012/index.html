@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.conteiner {
+        div.container {
          background-color: lightsalmon;
 
          display: flex;
@@ -16,40 +16,31 @@
          background-color: lightblue;
          border: 1px solid black;
          text-align: center;
+         flex-basis: 200px;
           
         }
 
-        div#cxA {
-           /* flex-shrink: 1px;
+        div#caixaA {
+           flex-shrink: 1px;
            flex-grow: 0px; 
-           flex-basis: 200px; */
-
-           flex: 0 1 200px;
         }
 
-        div#cxB {
-           /* flex-shrink: 1px;
+        div#caixaB {
+           flex-shrink: 1px;
            flex-grow: 1px; 
-           flex-basis: 200px; */
-
-           flex: 1 1 150px; 
         }
 
-        div#cxC {
-           /* flex-shrink: 1px;
-           flex-grow: 4px;
-           flex-basis: 200px; */
- 
-           flex: 4 1 auto;
+        div#caixaC {
+           flex-shrink: 1px;
+           flex-grow: 4px;     
         }
     </style>
 </head>
 <body>
-     <div class="conteiner">
-        <div class="item" id="cxA">A</div>
-        <div class="item" id="cxB">B</div>
-        <div class="item" id="cxC">C</div>
-        
+     <div class="container">
+        <div class="item" id="caixaA">A</div>
+        <div class="item" id="caixaB">B</div>
+        <div class="item" id="caixaC">C</div>
      </div>
 </body>
 </html>
